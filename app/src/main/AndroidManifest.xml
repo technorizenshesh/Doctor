@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.technorizen.doctor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.MPESAExpressActivity"></activity>
+        <activity android:name=".activities.ConversionActivity" />
+        <activity android:name=".activities.shops.ShopPaymentActivity" />
+        <activity android:name=".activities.shops.AddTimeAndDateActivity" />
+        <activity android:name=".activities.shops.SetDeliveryLocationActivity" />
+        <activity android:name=".activities.shops.MyCartActivity" />
+        <activity android:name=".activities.shops.MedicinesDetailActivity" />
+        <activity android:name=".activities.shops.MedicensActivity" />
+        <activity
+            android:name=".activities.VideoChatViewActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/FullScreenVideoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDCVWMVF9TKMrp0jZEvI4MKGaFB5VwS00Y" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.AppointmentActivity" />
+        <activity android:name=".activities.TimeSlotActivity3" />
+        <activity android:name=".activities.TimeSlotActivity2" />
+        <activity android:name=".activities.TimeSlotActivity1" />
+        <activity android:name=".activities.DoctorBookingActivity" />
+        <activity android:name=".activities.DoctorClenicDetailActivity" />
+        <activity android:name=".activities.DoctorListActivity" />
+        <activity android:name=".activities.SeeMoreDoctorsActivity" />
+        <activity android:name=".activities.SeeMoreServicesActivity" />
+        <activity android:name=".activities.PsychiatristActivity" />
+        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.ConditionsAndTherapyActivity" />
+        <activity android:name=".activities.BloodSugarActivity" />
+        <activity android:name=".activities.BloodPressureActivity" />
+        <activity android:name=".activities.GPSActivity" />
+        <activity android:name=".activities.ChooseGenderActivity" />
+        <activity android:name=".activities.UploadProfilePictureActivity" />
+        <activity android:name=".activities.AccountInfoActivity" />
+        <activity android:name=".activities.OTPVerficationActivity" />
+        <activity android:name=".activities.MobileNumberActivity" />
+        <activity android:name=".activities.StartActivity" />
+        <activity android:name=".activities.WelcomeActivity" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/Header_timing"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Time &amp; Date"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ly_Weeklyclosed"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Time"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_below="@+id/ly_opentime">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_13sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/black_outline_back"
+                    android:hint="Select Time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Date"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_below="@+id/ly_opentime">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_13sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/black_outline_back"
+                    android:hint="Set Date"/>
+
+                <TextView
+                    android:id="@+id/tv_Open_Timing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_below="@+id/Header_timing">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/ly_opentime"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_below="@+id/tv_Open_Timing">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMorning"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_closetiming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Afternoon"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="20sp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_below="@+id/ly_opentime">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/ly_closetiming"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/tv_closetiming">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvAfterNoon"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_Weeklyclosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evening &amp; Night"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_below="@+id/ly_closetiming">
+
+                </TextView>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/tv_Weeklyclosed">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_evening"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_100sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@color/red"
+                android:layout_below="@+id/ly_Weeklyclosed">
+
+            </Button>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/v_5">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/v_40"
+        android:layout_height="@dimen/v_40"
+        android:id="@+id/chat_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/default_user"/>
+    <LinearLayout
+        android:layout_toLeftOf="@+id/chat_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/v_5"
+        android:padding="@dimen/v_5"
+        android:background="@drawable/bg_chat_right">
+        <TextView
+            android:id="@+id/txt_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:padding="2dp"
+            android:textSize="@dimen/v_14"
+            android:text="message"
+            android:textColor="@color/white" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <ImageView
+                android:id="@+id/img_seen"
+                android:layout_width="@dimen/v_20"
+                android:layout_height="@dimen/v_20"
+                android:layout_marginRight="@dimen/v_2"
+                android:layout_marginLeft="@dimen/v_2"
+                android:src="@drawable/ic_seen"/>
+        <TextView
+            android:layout_toRightOf="@+id/img_seen"
+            android:id="@+id/txt_time"
+            android:text="10:oo am"
+            android:textSize="@dimen/v_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_e5"
+            android:padding="5dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

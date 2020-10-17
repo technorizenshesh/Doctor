@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Doctor</string>
+    <string name="clientID">962036044531-gc1s88m4gq464c3kashdtaftrm2o60s4.apps.googleusercontent.com</string>
+    <string name="clientSecret">vTMNMuv8ET8B4qx6NMZZ3cAX</string>
+    <string name="agora_app_id">0da6aaf2cf8440e284624f3176bfa27e</string>
+    <string name="agora_access_token">fe8b70b5c48340baa4bc7b9925314baa</string>
+    <string name="account_info">Account \nInfomation</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="age">Age</string>
+    <string name="height">Height(in cm)</string>
+    <string name="weight">Weight(in kg)</string>
+
+    <string name="upload_you_profile">Upload your\nprofile picture</string>
+    <string name="next">Next</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="systonic">Systonic</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="your_blood_pree">Your blood Pressure(Systonic/diastalic)</string>
+    <string name="inp_blood_pres">Input Blood Pressure</string>
+
+    <string name="how_do_you_feel">How do you feel?</string>
+    <string name="happy">Happy</string>
+    <string name="angry">Angry</string>
+    <string name="sad">Sad</string>
+    <string name="tired">Tired</string>
+    <string name="exicted">Excited</string>
+    <string name="stressed">Stressed</string>
+    <string name="relaxed">Relaxed</string>
+
+    <string name="inp_blood_sugar">Input Blood Sugar</string>
+    <string name="what_meal_it">What meal of the day was it?</string>
+    <string name="what_reading_take">What did you take the reading?</string>
+    <string name="blood_sugar_reading">Blood Sugar Reading (mmol/L)</string>
+
+    <string name="condition_and_therapy">Conditions &amp; Therapy</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="hupertension_blood_pree">Hypertension Blood Pressure</string>
+    <string name="types_of_diabetes">Type of diabetes</string>
+    <string name="year_diagosed">Year Diagonosed</string>
+    <string name="blood_glucose_target">Blood glucose target</string>
+    <string name="min">min</string>
+    <string name="filter">Filter</string>
+    <string name="mm_mol">mmol/mol</string>
+    <string name="madication">Medication</string>
+    <string name="foot_prolems">Foot problems</string>
+    <string name="diabetic_eye">Diabetic eye</string>
+    <string name="hypertension">Hypertension Blood Pressure</string>
+    <string name="numbness">Numbness/Tingling/Pain</string>
+    <string name="associated_madication">Associated medication</string>
+
+    <string name="logo">Logo</string>
+    <string name="services">Services</string>
+    <string name="seemore">See more(45)</string>
+    <string name="blood_pre">Blood \nPressure</string>
+    <string name="sugar_test">Sugar\nTest</string>
+    <string name="blood_test">Blood\nTest</string>
+    <string name="psyschirist">Psychiatrist</string>
+    <string name="psyschirist_doctor">Psychiatrist Doctor</string>
+    <string name="general">General</string>
+    <string name="therapist">Therapist</string>
+
+    <string name="home">Home</string>
+    <string name="my_data">My Data</string>
+    <string name="talk_doctor">Talk Doctor</string>
+    <string name="shop">Shop</string>
+    <string name="doctor">Doctors</string>
+    <string name="account">Account</string>
+
+    <string-array name="what_meal_entries">
+        <item>Breakfast</item>
+        <item>Dinner</item>
+    </string-array>
+
+    <string-array name="diabetes_type">
+        <item>Type 1 diabetes</item>
+        <item>Type 2 diabetes</item>
+    </string-array>
+
+    <string-array name="gender_type">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="year_digonose">
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+    </string-array>
+
+    <string-array name="what_reading_entries">
+        <item>Before</item>
+        <item>After</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Delete">delete</string>
+    <string name="OK">ok</string>
+    <string name="add_cart">Add Cart</string>
+    <string name="submit">Submit</string>
+    <string name="write_your_message">write your message..</string>
+    <string name="no_record_available">No Record Available</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="request_mpesaexpress">Request MPESAExpress</string>
+
+</resources>

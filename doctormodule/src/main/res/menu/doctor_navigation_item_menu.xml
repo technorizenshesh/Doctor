@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp1">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/normal_gray_back"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp2">
+        <item
+            android:id="@+id/nav_app_history"
+            android:title="Appointment History"
+            android:icon="@drawable/normal_gray_back"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp5">
+        <item
+            android:id="@+id/nav_chat"
+            android:title="Chat"
+            android:icon="@drawable/normal_gray_back"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp6">
+        <item
+            android:id="@+id/nav_notification"
+            android:title="Notifications"
+            android:visible="false"
+            android:icon="@drawable/normal_gray_back"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp7">
+        <item
+            android:id="@+id/nav_about"
+            android:title="About"
+            android:icon="@drawable/normal_gray_back"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp8">
+        <item
+            android:id="@+id/nav_privacy"
+            android:title="Privacy Policy"
+            android:icon="@drawable/normal_gray_back"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp9">
+        <item
+            android:id="@+id/nav_terms_n_condition"
+            android:title="Terms &amp; Conditions"
+            android:icon="@drawable/normal_gray_back"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp10">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/normal_gray_back"/>
+    </group>
+
+</menu>

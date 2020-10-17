@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v_5"
+        android:background="@color/white"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/v_5">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/default_user"/>
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="@dimen/v_30"
+            android:layout_height="@dimen/v_30"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/count"
+            android:layout_toLeftOf="@+id/img_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="2"
+            android:layout_marginRight="@dimen/v_10"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/v_18"
+            android:background="@drawable/ovel_primary" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile"
+            android:layout_toLeftOf="@+id/count"
+            android:text="User name"
+            android:textSize="@dimen/v_18"
+            android:padding="@dimen/v_2"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/last_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile"
+            android:layout_below="@+id/name"
+            android:maxLines="1"
+            android:layout_marginLeft="@dimen/v_5"
+            android:textSize="@dimen/v_16" />
+    </RelativeLayout>
+</LinearLayout>

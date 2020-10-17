@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">DoctorModule</string>
+    <string name="agora_app_id">0da6aaf2cf8440e284624f3176bfa27e</string>
+    <string name="agora_access_token">fe8b70b5c48340baa4bc7b9925314baa</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="acc_info">Account \n Information</string>
+    <string name="personal_information">Personal \n Information</string>
+    <string name="add_ncertificate">Add \ncertificate</string>
+    <string name="add_profile">Add \nProfile</string>
+    <string name="timing"><![CDATA[Add open & \nClose timing]]></string>
+    <string name="add_fees"><![CDATA[Add Hourly & \nClinic Fees]]></string>
+    <array name="age">
+        <item>Select Age</item>
+        <item>"20"</item>
+        <item>"21"</item>
+        <item>"22"</item>
+        <item>"23"</item>
+        <item>"24"</item>
+        <item>"25"</item>
+        <item>"26"</item>
+        <item>"27"</item>
+        <item>"28"</item>
+        <item>"29"</item>
+        <item>"30"</item>
+    </array>
+    <array name="height">
+        <item>Select height</item>
+        <item>4.5 fit</item>
+        <item>5.0 fit</item>
+        <item>5.5 fit</item>
+        <item>6.0 fit</item>
+        <item>6.5 fit</item>
+    </array>
+    <array name="experience">
+        <item>1 year</item>
+        <item>2 year</item>
+        <item>3 year</item>
+        <item>4 year</item>
+        <item>5 year</item>
+        <item>6 year</item>
+        <item>7 year</item>
+        <item>8 year</item>
+        <item>9 year</item>
+        <item>10 year</item>
+        <item>10+ year</item>
+    </array>
+    <array name="weekly_off">
+        <item>Select Weekly Off</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </array>
+    <string name="title_activity_doctor_home">DoctorHomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="OK">Ok</string>
+    <string name="Delete">Delete</string>
+    <string name="no_record_available">No Record available</string>
+    <string name="write_your_message">Write your message here</string>
+</resources>

@@ -1,0 +1,3 @@
+include ':app', ':utils'
+rootProject.name='Doctor'
+include ':doctormodule'
